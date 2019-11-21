@@ -7,7 +7,7 @@ import (
 	"github.com/tidusant/chadmin-repo/models"
 
 	//	"c3m/common/inflect"
-	//	"c3m/log" test dev branch 3
+	//	"c3m/log" test dev branch 3 dev2
 
 	"flag"
 	"fmt"
