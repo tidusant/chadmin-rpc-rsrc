@@ -7,7 +7,7 @@ import (
 	"github.com/tidusant/chadmin-repo/models"
 
 	//	"c3m/common/inflect"
-	//	"c3m/log" test dev branch 3
+	//	"c3m/log" test dev branch 3 dev3
 
 	"flag"
 	"fmt"
@@ -23,7 +23,7 @@ func (t *Arith) Run(data string, result *models.RequestResult) error {
 	*result = models.RequestResult{}
 	//parse args
 	args := strings.Split(data, "|")
-
+	log.Debugf("call with arg:%v", args)
 	if len(args) < 3 {
 		return nil
 	}
