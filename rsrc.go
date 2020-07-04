@@ -7,7 +7,7 @@ import (
 	"github.com/tidusant/chadmin-repo/models"
 
 	//	"c3m/common/inflect"
-	//	"c3m/log" test dev branch 3 dev3
+	//	"c3m/log"
 
 	"flag"
 	"fmt"
@@ -40,7 +40,7 @@ func (t *Arith) Run(data string, result *models.RequestResult) error {
 	if len(args) > 3 {
 		usex.Params = args[3]
 	}
-	//check shop permission
+	//check shop permission r
 	shop := rpch.GetShopById(usex.UserID, ShopID)
 	if shop.Status == 0 {
 		*result = c3mcommon.ReturnJsonMessage("-4", "Shop is disabled.", "", "")
